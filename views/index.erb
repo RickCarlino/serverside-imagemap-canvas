@@ -1,14 +1,27 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Draft//EN">
 <HTML>
   <HEAD>
-    <TITLE>Serverside Drawing App</TITLE>
+    <TITLE>Monochrome Imagemap Canvas</TITLE>
   </HEAD>
   <BODY>
     <H1>CLICK TO DRAW</H1>
     <A href="/">
       <IMG SRC="<%= @image %>" ISMAP>
     </A>
-    <BR/>
-    <B>NOTE:</B> Canvas is reset on server restart.
+    <H2>What Is This?</H2>
+    <P>
+      This is mostly satire and partly an exploration of deprecated web technologies. This app uses <a href="https://en.wikipedia.org/wiki/Image_map#Server-side">serverside image maps</a> to render a shared canvas that is stored on the server. You should not use this in real-world apps.
+    </P>
+    <H2>How Do I Use This?</H2>
+    <P>
+      Clicking on a black pixel turns it white. Conversely, clicking on a white pixel turns it black. The canvas is publicly shared by all app users.
+    </P>
+    <H2>Learn More</H2>
+    <P>
+      This app was created with heart emoji by <A HREF="https://rickcarlino.com/">Rick Carlino</A>
+    </P>
+    <P>
+      The <A HREF="">sourcecode is available on Github under the MIT license.</A>
+    </P>
   </BODY>
 </HTML>
