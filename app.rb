@@ -8,7 +8,7 @@ canvas = ChunkyPNG::Canvas.new(MAP_SIZE, MAP_SIZE, WHITE)
 canvas.border!(3)
 
 get "/" do
-  keys = params.keys.first
+  keys = params.keys
   if keys.length == 1
     string = keys.first[0,7]
     x, y = string.split(",").map(&:to_i)
